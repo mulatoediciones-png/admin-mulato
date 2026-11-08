@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mi Negocio</title>
+<meta name="theme-color" content="#0f766e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Mi Negocio">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <nav class="side" id="side"></nav>
+  <div class="main">
+    <header class="top">
+      <h1 id="title">Inicio</h1>
+      <button class="sync" id="sync" type="button" title="Sincronizar ahora"><span class="dot"></span><span id="syncTxt">Local</span></button>
+    </header>
+    <main id="view"></main>
+  </div>
+  <nav class="bottom" id="bottom"></nav>
+</div>
+<button class="fab" id="fab" type="button" aria-label="Agregar" hidden>+</button>
+<dialog id="dlg"></dialog>
+<div id="print"></div>
+<script src="app.js"></script>
+</body>
+</html>
